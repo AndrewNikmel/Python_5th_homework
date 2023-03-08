@@ -6,15 +6,15 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
 
-def multik(a, b):
-    if b>0:
-        return a * multik(a, b-1)
-    else:
-        return 1
+# def multik(a, b):
+#     if b>0:
+#         return a * multik(a, b-1)
+#     else:
+#         return 1
 
-a = int(input("Введите число А: "))
-b = int(input("Введите число B: "))
-print(multik(a,b))
+# a = int(input("Введите число А: "))
+# b = int(input("Введите число B: "))
+# print(multik(a,b))
 
 
 # Задача 28: Напишите рекурсивную функцию 
@@ -27,11 +27,11 @@ print(multik(a,b))
 # 2 2
 #     4 
 
-def sum(a):
-    if a <= b:
-        a += 1
-    return sum(a+1)
+### ne uspekh
+def summa(a,b):
+    while b > 0:
+        return a + summa(a,b-1)
 
-a = int(input("Enter A: "))
-b = int(input("Enter B: "))
-print(sum(a))
+a = int(input("A"))
+b = int(input("B"))
+summa(a,b)
