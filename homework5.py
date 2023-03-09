@@ -27,11 +27,14 @@
 # 2 2
 #     4 
 
-### ne uspekh
-def summa(a,b):
-    while b > 0:
-        return a + summa(a,b-1)
 
-a = int(input("A"))
-b = int(input("B"))
-summa(a,b)
+def sum(a,b):
+    count = 0
+    if count == b:
+        return a
+    count += 1
+    return sum(a+1,b-1)
+
+a = int(input("A: "))
+b = int(input("B: "))
+print(sum(a,b))
